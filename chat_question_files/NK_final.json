@@ -1,0 +1,108 @@
+{
+    "company_id": 2,
+    "domain_id": 1,
+    "questions": [
+        {
+            "question_id": 1,
+            "question": "Hi Traveller  Welcome to Nk Grand Chennai \n I am Sara – ChatBot. \n Your Name Please??",
+            "link":"",
+            "next_question_id": [
+                2
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "string",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 2,
+            "question": "Hi Traveller {1} Please conform your Email id.",
+            "link":"",
+            "next_question_id": [
+                3
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "email",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 3,
+            "question": "Please conform your Contact number.",
+            "link":"",
+            "next_question_id": [
+                4
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "mobileno",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 4,
+            "question": "Please let me know your stay details..",
+            "link":"",
+            "next_question_id": [
+                5
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": false,
+            "input_type": "date",
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 5,
+            "question": "We are excited to offer the best price for your stay. \n  Please conform your Pax..",
+            "link":"",
+            "next_question_id": [
+                6
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": false,
+            "input_type": "number",
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 6,
+            "question": "This is the best price we can offer you.. {} per person including Breakfast.. \n Please click the below link for Booking your stay.. \n Thank you.. Have a nice stay.. ",
+            "link":"https://easeroom.com/hotelbookingnew/Home/LandingIbe?strSpecificHotelId={}&CheckIn={}&CheckOut={}~click",
+            "next_question_id": [
+                0
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": true,
+            "input_type": "none",
+            "is_db_provider": true,
+            "provider_details": {
+                "provider_name": "nk",
+                "method": "POST",
+                "url": "http://115.112.175.13/IBEAPI/OTA/RoomSearch",
+                "headers": {
+                    "Authorization": "Basic ZWFzZXJvb206Y2hhdGJvdF9lYXNlcm9vbQ=="
+                },
+                "request": {
+                    "HotelCode": "1110",
+                    "CheckinDate": "",
+                    "CheckoutDate": "",
+                    "NoofAdults": "",
+                    "GroupId": "1"
+                },
+                "api_id": 3
+            }
+        }
+    ]
+}

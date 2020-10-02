@@ -1,0 +1,293 @@
+{
+    "company_id" : 17,
+    "domain_id" : 1,
+    "questions" : [ 
+        {
+            "question_id" : 1,
+            "question" : "Dear Customer, welcome to Lakshmi Vilas Bank.\n My name is Vidya and am your virtual Chat Assistant.Thanks a lot, you are few steps away.\n It would be nice to know you better, to help you better. May I have your complete name.",
+            "link" : "",
+            "next_question_id" : [ 
+                2
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "string",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : "Please type correct Name.\n This will help us identify your information accurately"
+        }, 
+        {
+            "question_id" : 2,
+            "question" : "Please select the Loan you are looking for.",
+            "link" : "",
+            "next_question_id" : [ 
+                3
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "option",
+            "option_answers" : [
+                "Personal Loan",
+                "Home Loan",
+                "Car Loan",
+                "Jewel Loan"
+            ],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 3,
+            "question" : "What's your Occupation? Are you salaried or self-employed?",
+            "link" : "",
+            "next_question_id" : [ 
+                4,
+                6
+
+            ],
+            "answers" : [
+                {
+                    "mapped_question_id" : 4,
+                    "answer" : [ 
+                        "Salaried"
+                    ]
+                }, 
+                {
+                    "mapped_question_id" : 6,
+                    "answer" : [ 
+                        "Self-employed"
+                    ]
+                }
+            ],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "option",
+            "option_answers" : [ 
+                "Salaried", 
+                "Self-employed"
+            ],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : "Please provide correct Occupation. \n This will help us identify your information accurately."
+        }, 
+        {
+            "question_id" : 4,
+            "question" : "May I have your Years of working experience ?",
+            "link" : "",
+            "next_question_id" : [ 
+                5
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 5,
+            "question" : "May I have your Monthly Income? This is important for getting the most accurate quote.",
+            "link" : "",
+            "next_question_id" : [ 
+                9
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 6,
+            "question" : "Do you file your ITR ?",
+            "link" : "",
+            "next_question_id" : [ 
+                7, 
+                9
+                
+            ],
+            "answers" : [ 
+                {
+                    "mapped_question_id" : 7,
+                    "answer" : [ 
+                        "Yes"
+                    ]
+                }, 
+                {
+                    "mapped_question_id" : 9,
+                    "answer" : [ 
+                        "No"
+                    ]
+                }
+            ],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "options",
+            "option_answers" : [ 
+                "Yes", 
+                "No"
+            ],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 7,
+            "question" : "How old is your establishment ?",
+            "link" : "",
+            "next_question_id" : [ 
+                8
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 8,
+            "question" : "May I have your Turnover? This is important for getting the most accurate quote.",
+            "link" : "",
+            "next_question_id" : [ 
+                9
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 9,
+            "question" : "Great. Your Date of Birth ?",
+            "link" : "",
+            "next_question_id" : [ 
+                10
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "date",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : "Please type a valid  Date. \n This will help us identify your information accurately."
+        }, 
+        {
+            "question_id" : 10,
+            "question" : "Please enter your PAN number",
+            "link" : "",
+            "next_question_id" : [ 
+                11
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "string",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : "Please provide correct PAN number.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id" : 11,
+            "question" : "Do you have any other loans?",
+            "link" : "",
+            "next_question_id" : [ 
+                12, 
+                14
+                
+            ],
+            "answers" : [ 
+                {
+                    "mapped_question_id" : 12,
+                    "answer" : [ 
+                        "Yes"
+                    ]
+                }, 
+                {
+                    "mapped_question_id" : 14,
+                    "answer" : [ 
+                        "No"
+                    ]
+                }
+            ],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "options",
+            "option_answers" : [ 
+                "Yes", 
+                "No"
+            ],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 12,
+            "question" : "Please enter the type of loan",
+            "link" : "",
+            "next_question_id" : [ 
+                13
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "string",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 13,
+            "question" : "Please enter your Monthly emi.",
+            "link" : "",
+            "next_question_id" : [ 
+                14
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        },
+        {
+            "question_id" : 14,
+            "question" : "Thank you again! Our team will connect with you soon.",
+            "link" : "",
+            "next_question_id" : [ 
+                0
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : true,
+            "input_type" : "string",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {},
+            "error_msg" : ""
+        }
+    ]
+}
+
+
+
+

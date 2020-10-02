@@ -1,0 +1,348 @@
+{
+    "company_id": 16,
+    "domain_id": 1,
+    "questions": [
+        {
+            "question_id": 1,
+            "question": "Dear Customer, welcome to Lakshmi Vilas Bank. My name is Vidya and am your virtual Chat Assistant,  I will assist you in processing the Personal loan in a very quick time, can we chat now?",
+            "link": "",
+            "next_question_id": [
+                2,
+                17
+            ],
+            "answers": [
+                {
+                    "mapped_question_id": 2,
+                    "answer": [
+                        "Yes"
+                    ]
+                },
+                {
+                    "mapped_question_id": 18,
+                    "answer": [
+                        "No"
+                    ]
+                }
+            ],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "options",
+            "option_answers": [
+                "Yes",
+                "No"
+            ],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 2,
+            "question": "Thanks a lot, you are few steps away. It would be nice to know you better, to help you better. May I have your complete name as in PAN",
+            "link": "",
+            "next_question_id": [
+                3
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "string",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please type correct Name.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 3,
+            "question": "And your Email id?",
+            "link": "",
+            "next_question_id": [
+                4
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": false,
+            "input_type": "email",
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please type correct Email ID.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 4,
+            "question": "Great. Your Date of Birth (dd/mm/yyyy) ?",
+            "link": "",
+            "next_question_id": [
+                5
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "date",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please type correct Date of Birth. \n This will help us identify your information accurately."
+        },
+        {
+            "question_id": 5,
+            "question": "What's your Occupation? Are you salaried or self-employed?",
+            "link": "",
+            "next_question_id": [
+                6
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "option",
+            "option_answers": [
+                "Salaried",
+                "Self-employed"
+            ],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct Occupation. \n This will help us identify your information accurately."
+        },
+        {
+            "question_id": 6,
+            "question": "Please enter your monthly income.",
+            "link": "",
+            "next_question_id": [
+                7
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "number",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct Monthly Income.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 7,
+            "question": "Alright. Which City do you live in?",
+            "link": "",
+            "next_question_id": [
+                8
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": false,
+            "input_type": "string",
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct City.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 8,
+            "question": "Just the last few... Can you please tell us your Company's Name?",
+            "link": "",
+            "next_question_id": [
+                9
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "string",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct company name. \n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 9,
+            "question": "What's the Loan Amount you're looking for?",
+            "link": "",
+            "next_question_id": [
+                10
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "number",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct Loan Amount.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 10,
+            "question": "Please enter your PAN",
+            "link": "",
+            "next_question_id": [
+                11
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "string",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct PAN number.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 11,
+            "question": "We are amost done. Please enter your Aadhar Number",
+            "link": "",
+            "next_question_id": [
+                12
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "string",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": "Please provide correct Aadhar number.\n This will help us identify your information accurately"
+        },
+        {
+            "question_id": 12,
+            "question":"Thank you, finally do you have any other EMI payments running currently. If yes, Please enter the amount, else type No",
+            "link": "",
+            "next_question_id": [
+                13
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "number",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 13,
+            "question": "Please enter the OTP received on your mobile",
+            "link": "",
+            "next_question_id": [
+                14
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "number",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 14,
+            "question": "You have successfully applied for a personal loan. \n Congratulations! You are approved for a personal loan. Please find the details below. \n Interest Rate:{0}  \n EMI(Per Month): {1} \n Tenure: {2} \n Loan Amount: {3}  \n Processing Fee: 2% ",
+            "link": "",
+            "next_question_id": [
+                15,
+                16
+            ],
+            "answers": [
+                {
+                    "mapped_question_id": 15,
+                    "answer": [
+                        "Yes"
+                    ]
+                },
+                {
+                    "mapped_question_id": 16,
+                    "answer": [
+                        "No"
+                    ]
+                }
+            ],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "number",
+            "option_answers": [
+                "Yes",
+                "No"
+
+            ],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 15,
+            "question": "Ok. Now, please find the below link to upload the below documents to process your application \n Please find the below link and update the details. \n Proof of Identity:- Passport / Driving License / Voters ID / PAN Card (any one) \n Proof of Residence:- Leave and License Agreement / Utility Bill (not more than 3 months old) / Passport (any one). \n Latest 3 months Bank Statement (where salary/income is credited). Salary slips for last 3 months.",
+            "link": "",
+            "next_question_id": [
+                16
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "filetype",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 16,
+            "question": "Thank you again! Our team will connect with you soon.",
+            "link": "",
+            "next_question_id": [
+                0
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": true,
+            "input_type": "none",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 17,
+            "question": "You are few steps away from completing the loan application. May I continue with the application process?",
+            "link": "",
+            "next_question_id": [
+                2,
+                18
+            ],
+            "answers": [
+                {
+                    "mapped_question_id": 2,
+                    "answer": [
+                        "Yes"
+                    ]
+                },
+                {
+                    "mapped_question_id": 19,
+                    "answer": [
+                        "No"
+                    ]
+                }
+            ],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "options",
+            "option_answers": [
+                "Yes",
+                "No"
+            ],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        },
+        {
+            "question_id": 18,
+            "question": "That’s ok. I am a Virtual assistant and happy to assist 24/7. You can come back here anytime for your loan related queries. Have a great day!",
+            "link": "",
+            "next_question_id": [
+                0
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": true,
+            "input_type": "none",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {},
+            "error_msg": ""
+        }
+        
+    ]
+}

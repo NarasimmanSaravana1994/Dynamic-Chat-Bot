@@ -1,0 +1,129 @@
+{
+    "_id" : ObjectId("5ef48a48e09593b58028aebb"),
+    "company_id" : 15,
+    "domain_id" : 1,
+    "questions" : [ 
+        {
+            "question_id" : 1,
+            "question" : "Dear customer I'm vidhya. Greetings for the day. How are you ?",
+            "link" : "",
+            "next_question_id" : [ 
+                2
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "string",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 2,
+            "question" : "I'm a virtual assistant and i believe you are looking for a car loan..",
+            "link" : "",
+            "next_question_id" : [ 
+                3
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "string",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 3,
+            "question" : "I will be very happy in helping to get your dream car. Can you please quote me your budget",
+            "link" : "",
+            "next_question_id" : [ 
+                4
+            ],
+            "option_answers" : [],
+            "answers" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 4,
+            "question" : "Please confirm your type of income",
+            "link" : "",
+            "next_question_id" : [ 
+                5
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "options",
+            "option_answers" : [ 
+                "Salaried", 
+                "Self-Employed", 
+                "Business"
+            ],
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 5,
+            "question" : "Please confirm your monthly salary to check your eligibility.",
+            "link" : "",
+            "next_question_id" : [ 
+                6
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "number",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 6,
+            "question" : "We are about to get completed please upload your your last two months salary slip for verification",
+            "link" : "",
+            "next_question_id" : [ 
+                7
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : false,
+            "input_type" : "filetype",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 7,
+            "question" : "Please upload your PAN card",
+            "link" : "",
+            "next_question_id" : [ 
+                8
+            ],
+            "option_answers" : [],
+            "answers" : [],
+            "flow_end" : false,
+            "input_type" : "filetype",
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }, 
+        {
+            "question_id" : 8,
+            "question" : "Congratulations your applications is processed successfully ,our customer partner will get in touch with you shortly",
+            "link" : "",
+            "next_question_id" : [ 
+                0
+            ],
+            "answers" : [],
+            "elimination" : [],
+            "flow_end" : true,
+            "input_type" : "none",
+            "option_answers" : [],
+            "is_db_provider" : false,
+            "provider_details" : {}
+        }
+    ]
+}

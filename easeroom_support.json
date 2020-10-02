@@ -1,0 +1,129 @@
+{
+  "company_id": 3,
+  "domain_id": 1,
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "Hi Customer Welcome to Company name \n I am Test – ChatBot.",
+      "link": "",
+      "next_question_id": [2],
+      "answers": [],
+      "elimination": [],
+      "flow_end": false,
+      "input_type": "string",
+      "option_answers": [],
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 2,
+      "question": "Do you need a solution or given solution is not working. Please choose the below mentioned options \n Please select the above option to produce further.",
+      "link": "",
+      "next_question_id": [3],
+      "option_answers": ["Need Solution", "Existing solution is not working"],
+      "answers": [
+        {
+          "mapped_question_id": 3,
+          "answer": ["Need Solution."]
+        },
+        {
+          "mapped_question_id": 10,
+          "answer": ["Existing solution is not working"]
+        }
+      ],
+      "elimination": [],
+      "flow_end": false,
+      "input_type": "option",
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 3,
+      "question": "Please choose the below listen product are you facing issue/problem.",
+      "link": "",
+      "next_question_id": [4],
+      "option_answers": ["Product - A", "Product - B"],
+      "answers": [],
+      "flow_end": false,
+      "input_type": "option",
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 4,
+      "question": "Please choose from the below listed issues you are facing in your product.",
+      "link": "",
+      "next_question_id": [5],
+      "option_answers": ["Problem - A", "Problem - B"],
+      "answers": [],
+      "flow_end": false,
+      "input_type": "options",
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 5,
+      "question": "Please use the below mentioned possible solution for fix the issue in product and, also Please confirm the Contact number.",
+      "next_question_id": [6],
+      "option_answers": [],
+      "answers": [],
+      "link": "",
+      "flow_end": false,
+      "input_type": "mobileno",
+      "is_db_provider": true,
+      "provider_details": {}
+    },
+    {
+      "question_id": 6,
+      "question": "Please conform your Email id.",
+      "link": "",
+      "next_question_id": [7],
+      "answers": [],
+      "elimination": [],
+      "flow_end": false,
+      "input_type": "email",
+      "option_answers": [],
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 7,
+      "question": "Thank you for the details.. \n  Please use the {} reference id for your future reference.In case your problem not resolved, please use our chat application and choose Existing solution is not working option.",
+      "link": "",
+      "next_question_id": [0],
+      "answers": [],
+      "elimination": [],
+      "flow_end": true,
+      "input_type": "none",
+      "option_answers": [],
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 10,
+      "question": "Sorry for wasting your pleaser time of your given solution.. Please mention your Reference id for your tech team reach soon.",
+      "link": "",
+      "next_question_id": [11],
+      "answers": [],
+      "elimination": [],
+      "flow_end": true,
+      "input_type": "string",
+      "option_answers": [],
+      "is_db_provider": false,
+      "provider_details": {}
+    },
+    {
+      "question_id": 11,
+      "question": "Thanks you for the detail. Your teach team reach you soon. We are raising a issue against your reference id. For ticket status please visit this link www.ticketissue.com.",
+      "link": "",
+      "next_question_id": [],
+      "answers": [],
+      "elimination": [],
+      "flow_end": true,
+      "input_type": "",
+      "option_answers": [],
+      "is_db_provider": false,
+      "provider_details": {}
+    }
+  ]
+}

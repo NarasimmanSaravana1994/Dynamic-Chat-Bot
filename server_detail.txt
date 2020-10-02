@@ -1,0 +1,5 @@
+http://10.150.250.134:4005/v1/chat
+
+10.150.250.134
+
+/home/propadmin/CHATBOT

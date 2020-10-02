@@ -1,0 +1,193 @@
+{
+    "company_id": 1,
+    "domain_id": 1,
+    "questions": [
+        {
+            "question_id": 1,
+            "question": "Hi Traveller  Welcome to Golden Hotel & Resorts \n I am Chitra – ChatBot. \n Your Name Please??",
+            "link":"",
+            "next_question_id": [
+                2
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "string",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 2,
+            "question": "Hi traveller {1} Where do you like to travel ..This are our prime location where you can book your packages. \n Please select the location you want to travel.",
+            "link":"",
+            "next_question_id": [
+                3
+            ],
+            "option_answers": [
+                "Kalimpong",
+                "Gangtok",
+                "Pelling",
+                "Darjeeling"
+            ],
+            "answers": [
+                {
+                    "mapped_question_id": 3,
+                    "answer": [
+                        "Gangtok"
+                    ]
+                },
+                {
+                    "mapped_question_id": 4,
+                    "answer": [
+                        "Kalimpong",
+                        "Pelling",
+                        "Darjeeling"
+                    ]
+                }
+            ],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "option",
+            "is_db_provider": true,
+            "provider_details": {
+                "provider_name": "golden",
+                "method": "GET",
+                "url": "http://115.112.175.13/IBEAPI/OTA/GetCityName?groupId=30",
+                "headers": {
+                    "Authorization": "Basic ZWFzZXJvb206Y2hhdGJvdF9lYXNlcm9vbQ=="
+                },
+                "api_id": 1
+            }
+        },
+        {
+            "question_id": 3,
+            "question": "In Gangtok, these are the hotels we have.",
+            "link":"",
+            "next_question_id": [
+                4,
+                5
+            ],
+            "option_answers": [
+                "GHR-1",
+                "GHR-2",
+                "GHR-3",
+                "GHR-4"
+            ],
+            "answers": [
+                {
+                    "mapped_question_id": 4,
+                    "answer": [
+                        "GHR-1",
+                        "GHR-2",
+                        "GHR-3",
+                        "GHR-4"
+                    ]
+                }
+            ],
+            "flow_end": false,
+            "input_type": "option",
+            "is_db_provider": true,
+            "provider_details": {
+                "provider_name": "golden",
+                "method": "POST",
+                "url": "http://115.112.175.13/IBEAPI/OTA/Hoteldetail",
+                "headers": {
+                    "Authorization": "Basic ZWFzZXJvb206Y2hhdGJvdF9lYXNlcm9vbQ=="
+                },
+                "request": {
+                    "GroupId": "1",
+                    "CityName": ""
+                },
+                "api_id": 2
+            }
+        },
+        {
+            "question_id": 4,
+            "question": "How many days..",
+            "link":"",
+            "next_question_id": [
+                5
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": false,
+            "input_type": "date",
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 5,
+            "question": "Please conform number of Pax..",
+            "link":"",
+            "next_question_id": [
+                6
+            ],
+            "option_answers": [],
+            "answers": [],
+            "flow_end": false,
+            "input_type": "number",
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 6,
+            "question": "Ohh We are excited to offer the best package for your stay.. \n This is the best price {} per pax \n Please conform the Contact number",
+            "next_question_id": [
+                7
+            ],
+            "option_answers": [],
+            "answers": [],
+            "link":"",
+            "flow_end": false,
+            "input_type": "mobileno",
+            "is_db_provider": true,
+            "provider_details": {
+                "provider_name": "golden",
+                "method": "POST",
+                "url": "http://115.112.175.13/IBEAPI/OTA/RoomSearch",
+                "headers": {
+                    "Authorization": "Basic ZWFzZXJvb206Y2hhdGJvdF9lYXNlcm9vbQ=="
+                },
+                "request": {
+                    "HotelCode": "",
+                    "CheckinDate": "",
+                    "CheckoutDate": "",
+                    "NoofAdults": "",
+                    "GroupId": "1"
+                },
+                "api_id": 3
+            }
+        },
+        {
+            "question_id": 7,
+            "question": "Please conform your Email id.",
+            "link":"",
+            "next_question_id": [
+                8
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": false,
+            "input_type": "email",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {}
+        },
+        {
+            "question_id": 8,
+            "question": "Thank you for the details.. \n Please click the below link for Booking your stay..",
+            "link":"https://easeroom.com/hotelbookingnew/Home/LandingIbe?strSpecificHotelId={}&CheckIn={}&CheckOut={}~click",
+            "next_question_id": [
+                0
+            ],
+            "answers": [],
+            "elimination": [],
+            "flow_end": true,
+            "input_type": "none",
+            "option_answers": [],
+            "is_db_provider": false,
+            "provider_details": {}
+        }
+    ]
+}
